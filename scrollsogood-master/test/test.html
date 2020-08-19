@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SSG Test</title>
+  <script src="../ssg.js"></script>
+</head>
+<body>
+  <!-- fixed content here -->
+  <div id="ssg-container">
+
+      <!-- first page -->
+      <div class="ssg-page">
+          Page 1 content
+          <button onclick="ssg.revealRight()">right</button>
+          <div class="ssg-child-right">
+              hidden content (right)
+              <button onclick="ssg.conceal()">back</button>
+          </div>
+      </div>
+  
+      <!-- second page -->
+      <div class="ssg-page">
+          Page 2 content
+          <button onclick="ssg.revealLeft()">left</button>
+          <div class="ssg-child-left">
+              hidden content (left)
+              <button onclick="ssg.conceal()">back</button>
+          </div>
+      </div>
+
+  </div>
+</body>
+
+</html>
